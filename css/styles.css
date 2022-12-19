@@ -189,11 +189,14 @@ span {
     background: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* -----PARAGRAPHS----- */
@@ -219,6 +222,7 @@ span {
     background-size: cover;
     margin-bottom: 8px;
 }
+
 
 .paragraphs-title {
     text-align: start;
@@ -318,14 +322,37 @@ span {
 }
 
 .position {
-    margin-bottom: 32px;
-
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+}
+
+.team-social-list {
+    display: flex;
+    padding: 12px 16px 36px;
+    justify-content: space-between;
+}
+
+.team-social-item {
+    /* display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%; */
+}
+
+.team-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: white;
 }
 
 /* -----CUSTOMERS----- */
@@ -358,10 +385,11 @@ span {
     align-items: center;
     border-radius: 4px;
     border: 1px solid #8E8F99;
+    cursor: pointer;
 }
 
 .customers-icon {
-    fill: red;
+    fill: #8E8F99;
 }
 
 .customers-icon:focus,
@@ -369,9 +397,20 @@ span {
     fill: #404BBF;
 }
 
+.customers-link:focus,
+.customers-link:hover {
+    border: 1px solid #404BBF;
+}
+
 /* -----FOOTER----- */
 .footer-pages {
     text-align: start;
+    display: flex;
+}
+
+.footer-description {
+    display: block;
+    margin-right: 128px;
 }
 
 .footer {
@@ -391,6 +430,44 @@ span {
     color: #F4F4FD;
     text-decoration: none;
 }
+
+
+.footer-social-title {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.footer-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    fill: white;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+    background-color: #31D0AA;
+}
+
 /* -----LOGO----- */
 
 .logo-text {
@@ -400,6 +477,7 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC; 
+    width: 264px;
 }
 
                                         /* -----PORTFOLIO----- */
@@ -438,6 +516,8 @@ span {
 .btn:focus {
     color: #FFFFFF;
     background-color: #4D5AE5;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 /* -----PICTURES----- */
@@ -456,7 +536,11 @@ span {
     padding-left: 16px;
 
     border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.porfolio-description:focus,
+.porfolio-description:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .pictures-title {
