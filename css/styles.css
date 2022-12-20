@@ -515,7 +515,7 @@ span {
     background-color: #4D5AE5;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    border: #4D5AE5;
+    border: 1px solid #4D5AE5;
 }
 
 /* -----PICTURES----- */
@@ -536,11 +536,6 @@ span {
     border-left: 0.5px solid #F4F4FD;
     border-right: 0.5px solid #F4F4FD;
 }
-
-/* .porfolio-description:focus,
-.porfolio-description:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-} */
 
 .pictures-title {
     padding-top: 32px;
@@ -566,8 +561,8 @@ span {
 }
 
 .pictures-link {
+    display: block;
     text-decoration: none;
-    /* border: 0.5px solid #F4F4FD; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
